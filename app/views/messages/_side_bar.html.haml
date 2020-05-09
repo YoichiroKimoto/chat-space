@@ -4,19 +4,16 @@
       .box__name
         = current_user.name
       .box__icon
-      = link_to do
+      = link_to new_group_path do
         = icon('far', 'edit', class: 'icon1_btn')
       = link_to edit_user_path(current_user) do
         = icon('fas', 'cog')
   .side-bar__group-list
-    .group-list__group1
-      .group1-name
-        techcamp
-      .group1-latestmessage
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group-list__group1
+        = link_to '#' do
+          .group1-name
+            = group.name
+          .group1-latestmessage
+            まだメッセージがありません
     
-    .group-list__group2
-      .group2-name
-        techcamp2
-      .group2-latestmessage
-        まだメッセージがありません
