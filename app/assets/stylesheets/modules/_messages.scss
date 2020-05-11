@@ -39,16 +39,10 @@
     border-bottom:solid #eeeeee;
   }
 
-  &__message-list{
-    height: calc(100vh - 190px);
-    background-color:#fafafa;
-  }
 
   &__message-form{
     height: 90px;
     background-color: #d2d2d2;
-    display: flex;
-    justify-content: space-between;
   }
 }
 
@@ -69,6 +63,7 @@
   &__icon{
     width: 60px;
     margin: 0 auto;
+    color: #ffffff;
   }
 }
 
@@ -88,6 +83,10 @@
     font-weight: bold;
     margin: 0 20px;
     padding-top: 20px;
+
+    a {
+      text-decoration: none;
+    }
   }
 
   &__group2{
@@ -102,10 +101,12 @@
 .group1-name{
   font-size: 15px;
   margin-bottom: 5px;
+  color: #ffffff;
 }
 
 .group1-latestmessage{
   font-size: 11px;
+  color: #ffffff;
 }
 
 .group2-name{
@@ -217,7 +218,8 @@
   }
 }
 
-.send_btn{
+.form{
+  &__submit{
   text-decoration: none;
   line-height: 50px;
   text-align: center;
@@ -226,6 +228,7 @@
   border: solid 0;
   background-color: royalblue;
   margin: 20px 40px 20px 15px;
+  }
 }
 
 .input-box{
@@ -243,5 +246,41 @@
     }
     margin-right: 10px;
     font-size: 1.5em;
+    position: absolute;
+    bottom: 10px;
+    left: 600px
   }
+}
+
+.new_message{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-box__message{
+  margin-left: 10px;
+  margin-top: 25px;
+  padding-left: 10px;
+  height: 40px;
+  line-height: 90px;
+  width: calc(100vw - 480px);
+  background-color: white;
+}
+
+.chat-main__message-list{
+  height: calc(100% - 190px);
+  overflow: scroll;
+}
+
+.icon1_btn{
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.fa-cog{
+  color: #ffffff;
+}
+
+.member-list{
+  display: flex;
 }
