@@ -135,11 +135,12 @@
 
 .edit__btn{
   font-size: 16px;
+  height: 40px;
   color: #38aef0;
   border: solid 1px;
   text-decoration: none;
   margin-top: 28px;
-  padding: 12px 20px;
+  padding: 8px 20px;
 }
 
 .member-list{
@@ -221,13 +222,14 @@
 .form{
   &__submit{
   text-decoration: none;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   width: 100px;
   color: white;
   border: solid 0;
   background-color: royalblue;
-  margin: 20px 40px 20px 15px;
+  margin: 25px 40px 20px 15px;
   }
 }
 
@@ -245,10 +247,10 @@
       display: none;
     }
     margin-right: 10px;
-    font-size: 1.5em;
+    font-size: 1.0em;
     position: absolute;
-    bottom: 10px;
-    left: 600px
+    bottom: 16px;
+    left: 620px
   }
 }
 
