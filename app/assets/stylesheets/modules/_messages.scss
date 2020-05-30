@@ -222,14 +222,14 @@
 .form{
   &__submit{
   text-decoration: none;
-  height: 40px;
+  height: 50px;
   line-height: 40px;
   text-align: center;
   width: 100px;
   color: white;
   border: solid 0;
-  background-color: royalblue;
-  margin: 25px 40px 20px 15px;
+  background-color: #38aef0;
+  margin: 25px 40px 25px 15px;
   }
 }
 
@@ -247,10 +247,10 @@
       display: none;
     }
     margin-right: 10px;
-    font-size: 1.0em;
+    font-size: 1.1em;
     position: absolute;
-    bottom: 16px;
-    left: 620px
+    bottom: 13px;
+    left: 625px
   }
 }
 
@@ -263,9 +263,9 @@
   margin-left: 10px;
   margin-top: 25px;
   padding-left: 10px;
-  height: 40px;
+  height: 50px;
   line-height: 90px;
-  width: calc(100vw - 480px);
+  width: calc(100vw - 465px);
   background-color: white;
 }
 
